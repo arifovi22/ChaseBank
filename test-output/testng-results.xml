@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="2" ignored="0" total="2" passed="0">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="14467" started-at="2020-03-04T23:52:15 EST" finished-at="2020-03-04T23:52:29 EST">
+    <groups>
+    </groups>
+    <test name="Test" duration-ms="14467" started-at="2020-03-04T23:52:15 EST" finished-at="2020-03-04T23:52:29 EST">
+      <class name="allTest.HomePageTest">
+        <test-method status="PASS" signature="gotoUrl(java.lang.String)[pri:0, instance:allTest.HomePageTest@45820e51]" name="gotoUrl" is-config="true" duration-ms="12448" started-at="2020-03-04T23:52:15 EST" finished-at="2020-03-04T23:52:27 EST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- gotoUrl -->
+        <test-method status="FAIL" signature="creditCardValidation()[pri:0, instance:allTest.HomePageTest@45820e51]" name="creditCardValidation" duration-ms="1927" started-at="2020-03-04T23:52:28 EST" finished-at="2020-03-04T23:52:29 EST">
+          <exception class="org.openqa.selenium.NoSuchSessionException">
+            <message>
+              <![CDATA[invalid session id
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-JQ0LRFT', ip: '192.168.1.17', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.132, chrome: {chromedriverVersion: 80.0.3987.106 (f68069574609..., userDataDir: C:\Users\Arif\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:63337}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 0d68395edd5109c82ad0131e3527cd5a]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchSessionException: invalid session id
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-JQ0LRFT', ip: '192.168.1.17', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.132, chrome: {chromedriverVersion: 80.0.3987.106 (f68069574609..., userDataDir: C:\Users\Arif\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:63337}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 0d68395edd5109c82ad0131e3527cd5a
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.perform(RemoteWebDriver.java:618)
+at org.openqa.selenium.interactions.Actions$BuiltAction.perform(Actions.java:639)
+at allPages.Generic.mouseHover(Generic.java:76)
+at allPages.HomePage.clickCards(HomePage.java:19)
+at allTest.HomePageTest.creditCardValidation(HomePageTest.java:33)
+at java.lang.Thread.run(Thread.java:748)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchSessionException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- creditCardValidation -->
+        <test-method status="FAIL" signature="titleValidation()[pri:0, instance:allTest.HomePageTest@45820e51]" name="titleValidation" duration-ms="709" started-at="2020-03-04T23:52:28 EST" finished-at="2020-03-04T23:52:28 EST">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [Capital One Credit Cards, Bank, and Loans - Personal and Business] but found [Capital One]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [Capital One Credit Cards, Bank, and Loans - Personal and Business] but found [Capital One]
+at allTest.HomePageTest.titleValidation(HomePageTest.java:27)
+at java.lang.Thread.run(Thread.java:748)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- titleValidation -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:allTest.HomePageTest@45820e51]" name="tearDown" is-config="true" duration-ms="1084" started-at="2020-03-04T23:52:28 EST" finished-at="2020-03-04T23:52:29 EST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="FAIL" signature="tearDown()[pri:0, instance:allTest.HomePageTest@45820e51]" name="tearDown" is-config="true" duration-ms="7" started-at="2020-03-04T23:52:29 EST" finished-at="2020-03-04T23:52:29 EST">
+          <exception class="org.openqa.selenium.NoSuchSessionException">
+            <message>
+              <![CDATA[invalid session id
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-JQ0LRFT', ip: '192.168.1.17', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.132, chrome: {chromedriverVersion: 80.0.3987.106 (f68069574609..., userDataDir: C:\Users\Arif\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:63337}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 0d68395edd5109c82ad0131e3527cd5a]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchSessionException: invalid session id
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-JQ0LRFT', ip: '192.168.1.17', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.132, chrome: {chromedriverVersion: 80.0.3987.106 (f68069574609..., userDataDir: C:\Users\Arif\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:63337}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 0d68395edd5109c82ad0131e3527cd5a
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
+at org.openqa.selenium.remote.RemoteWebDriver.close(RemoteWebDriver.java:442)
+at allPages.Generic.tearDown(Generic.java:65)
+at allTest.HomePageTest.tearDown(HomePageTest.java:43)
+at java.lang.Thread.run(Thread.java:748)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchSessionException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="SKIP" signature="tearDown()[pri:0, instance:allTest.HomePageTest@45820e51]" name="tearDown" is-config="true" duration-ms="-1583383949953" started-at="2020-03-04T23:52:29 EST" finished-at="1969-12-31T19:00:00 EST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- allTest.HomePageTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
